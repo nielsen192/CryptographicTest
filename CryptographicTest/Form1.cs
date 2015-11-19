@@ -261,7 +261,7 @@ namespace CryptographicTest
             byte[] LenIV = new byte[4];
 
             // Consruct the file name for the decrypted file.
-            string outFile = DecrFolder + inFile.Substring(0, inFile.LastIndexOf(".")) + ".txt";
+            string outFile = DecrFolder + inFile.Substring(0, inFile.LastIndexOf(".")) + ".docx";
 
             // Use FileStream objects to read the encrypted
             // file (inFs) and save the decrypted file (outFs).
