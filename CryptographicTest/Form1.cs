@@ -24,12 +24,12 @@ namespace CryptographicTest
 
             // Path variables for source, encryption, and
             // decryption folders. Must end with a backslash.
-            const string EncrFolder = @"d:\cryptotest\Encrypt\";
-            const string DecrFolder = @"d:\cryptotest\Decrypt\";
-            const string SrcFolder = @"d:\cryptotest\docs\";
+            const string EncrFolder = @"c:\cryptotest\Encrypt\";
+            const string DecrFolder = @"c:\cryptotest\Decrypt\";
+            const string SrcFolder = @"c:\cryptotest\docs\";
 
             // Public key file
-            const string PubKeyFile = @"d:\cryptotest\encrypt\rsaPublicKey.txt";
+            const string PubKeyFile = @"c:\cryptotest\encrypt\rsaPublicKey.txt";
 
             // Key container name for
             // private/public key value pair.
