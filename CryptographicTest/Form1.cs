@@ -14,26 +14,34 @@ namespace CryptographicTest
 {
     public partial class Form1 : Form
     {
+        RSACryptoServiceProvider rsa;
+        CspParameters cspp;
+        const string EncrFolder = @"c:\cryptotest\Encrypt\";
+        const string DecrFolder = @"c:\cryptotest\Decrypt\";
+        const string SrcFolder = @"c:\cryptotest\docs\";
+        const string PubKeyFile = @"c:\cryptotest\encrypt\rsaPublicKey.txt";
+        const string keyName = "Key01";
         public Form1()
         {
+
             InitializeComponent();
             // Declare CspParmeters and RsaCryptoServiceProvider
             // objects with global scope of your Form class.
-            CspParameters cspp = new CspParameters();
-            RSACryptoServiceProvider rsa;
+            cspp = new CspParameters();
+            
 
-            // Path variables for source, encryption, and
-            // decryption folders. Must end with a backslash.
-            const string EncrFolder = @"c:\cryptotest\Encrypt\";
-            const string DecrFolder = @"c:\cryptotest\Decrypt\";
-            const string SrcFolder = @"c:\cryptotest\docs\";
+            //// Path variables for source, encryption, and
+            //// decryption folders. Must end with a backslash.
+            //const string EncrFolder = @"c:\cryptotest\Encrypt\";
+            //const string DecrFolder = @"c:\cryptotest\Decrypt\";
+            //const string SrcFolder = @"c:\cryptotest\docs\";
 
-            // Public key file
-            const string PubKeyFile = @"c:\cryptotest\encrypt\rsaPublicKey.txt";
+            //// Public key file
+            //const string PubKeyFile = @"c:\cryptotest\encrypt\rsaPublicKey.txt";
 
-            // Key container name for
-            // private/public key value pair.
-            const string keyName = "Key01";
+            //// Key container name for
+            //// private/public key value pair.
+            //const string keyName = "Key01";
         }
 
         public void button1_Click(object sender, EventArgs e)
